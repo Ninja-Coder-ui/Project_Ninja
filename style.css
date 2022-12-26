@@ -1,0 +1,194 @@
+/******navigation bar********/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar {
+    background: linear-gradient(360deg, #ffffff 2%, rgb(95, 158, 160) 80%);
+    color: rgb(166, 152, 152);
+    font-family: cursive;
+    font-weight: bold;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    padding-bottom: 2px;
+    border: 1px;
+}
+
+.nav-bar img {
+    height: 40px;
+    float: left;
+    margin: 12px 10px;
+    padding: 5px 5px 5px 5px;
+}
+
+.menu-right {
+    text-align: right;
+    position: relative;
+}
+
+ul li {
+    display: inline-block;
+    margin: 20px;
+    list-style: none;
+}
+
+.dropbtn {
+    background-color: transparent;
+    color: rgb(16, 16, 16);
+    padding: 0px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+    color: rgb(77, 96, 181);
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f0e3e3da;
+    min-width: 80px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: +1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 30px 12px 2px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+
+span {
+    margin: 12px;
+    font-size: 28px;
+    cursor: pointer;
+    display: none;
+    color: black;
+}
+
+.container {
+    max-height: 80%;
+}
+
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: rgba(154, 151, 149, 0.865);
+    color: white;
+    margin-top: 45.5%;
+}
+
+@media (max-width: 800px) {
+    span {
+        display: block;
+    }
+    ul li {
+        display: block;
+    }
+    ul {
+        display: none;
+    }
+}
+
+
+/********** Base styles **********/
+
+* {
+    box-sizing: border-box;
+}
+
+section {
+    border: 1px solid black;
+    margin-bottom: 59px;
+    align-self: center;
+}
+
+.home {
+    background-image: url(#);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    margin-top: 120px;
+}
+
+
+/* Simple Responsive Framework. */
+
+a {
+    color: rgb(21, 21, 21);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(77, 96, 181);
+}
+
+a:active {
+    color: rgb(63, 63, 204);
+    text-decoration: underline;
+}
+
+
+/********** Desktop only **********/
+
+@media (min-width: 992px) {
+    .col-desktop-A {
+        float: center;
+        margin-left: 2.5%;
+        width: 95%;
+    }
+}
+
+
+/********** Tablet only **********/
+
+@media (min-width: 801px) and (max-width: 991px) {
+    .col-tablet-A {
+        float: left;
+        margin-left: 5%;
+        width: 89%;
+    }
+    .col-tablet-B {
+        float: left;
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 90%;
+    }
+}
+
+
+/********** Mobile only **********/
+
+@media (max-width: 800px) {
+    .col-mobile-A {
+        float: left;
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 80%;
+    }
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="JavaScript" href="script.js" />
+    <title>Coding Platform - ninja.coder</title>
+    <link rel="icon" type="image/x-icon" href="favicon/Black-_-White-Minimalist-Business-Logo.ico" />
+</head>
+
+<body>
+    <div class="nav-bar">
+        <a href="home.html"><img src="logo\ninja.coder.png" alt="ninja.coder" /></a>
+        <div class="menu-right">
+            <span onClick="myFunctions()">&#9776;</span>
+            <ul id="menu">
+                <li>
+                    <a href="home.html">Home</a>
+                </li>
+                <li>
+                    <a href="gallery.html">Gallery</a>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn" onclick="myFunction()">
+                Blogs
+                <i class="fa fa-caret-down"></i>
+              </button>
+                        <div class="dropdown-content" id="myDropdown">
+                            <a href="blog.html">Link 1</a>
+                            <a href="blog.html">Link 2</a>
+                            <a href="blog.html">Link 3</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="achievement.html">Achievements</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function myFunctions() {
+            var x = document.getElementById("menu");
+
+            if (x.style.display == "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+
+        /* When the user clicks on the button, 
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(e) {
+            if (!e.target.matches(".dropbtn")) {
+                var myDropdown = document.getElementById("myDropdown");
+                if (myDropdown.classList.contains("show")) {
+                    myDropdown.classList.remove("show");
+                }
+            }
+        };
+    </script>
+
+    <div class="container">
+
+    </div>
+    <footer>
+        <p>Copyright &copy; 2022 All rights reserved <br>
+            <a href="mailto:ninja.coder.psy@gmail.com">ninja.coder.psy@gmail.com</a></p>
+    </footer>
+</body>
+
+</html>
